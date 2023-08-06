@@ -145,6 +145,7 @@ class Quill {
   options: ExpandedOptions;
 
   constructor(container: HTMLElement | string, options: Options = {}) {
+    debug.error('Running R version....', container, options);
     this.options = expandConfig(container, options);
     this.container = this.options.container;
     if (this.container == null) {
